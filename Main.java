@@ -22,12 +22,12 @@ public class Main {
 
         //Спрашиваем у пользователя угол поворота
         System.out.print("Введите угол поворота (90, 180 или 270 градусов): ");
-        int angel = scanner.nextInt();
+        int angle = scanner.nextInt();
 
         //Выполняем поворот матрицы
-        int[][] rotatedColors = rotateMatrix(colors, angel);
+        int[][] rotatedColors = rotateMatrix(colors, angle);
         //Выводим повернутую матрицу
-        System.out.print("\nМатрица после поворота на " + angel + " градусов:\n");
+        System.out.print("\nМатрица после поворота на " + angle + " градусов:\n");
         printMatrix(rotatedColors);
         scanner.close();
     }
